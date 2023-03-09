@@ -1,0 +1,43 @@
+@import 'google-fonts';
+@import 'variable-overrides';
+@import 'bootstrap/scss/bootstrap';
+@import 'sticky-footer';
+
+
+// Add extra top margin to the first row
+// in the main element
+// because our navbar is fixed
+main .row:first-of-type {
+  margin-top: 80px;
+}
+
+
+// Some styling for photos
+// the height in viewports widths
+// helps keeping nice proportions
+.photo {
+  height: 20vw;
+  width: 100%;
+}
+
+// A 'fake' logo
+.logo {
+  font-family: 'Carter One';
+  display: inline-block;
+  margin-right: 40px;
+  margin-top: -5px;
+}
+
+li {
+  list-style: none
+}
+
+.name{
+  margin-block-end: 30px;
+  display: inline-block;
+}
+
+#buybtn{
+  margin-left: 200px;
+  display: inline-block;
+}
