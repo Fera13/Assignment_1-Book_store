@@ -4,19 +4,12 @@
 @import 'sticky-footer';
 
 
-// Add extra top margin to the first row
-// in the main element
-// because our navbar is fixed
 main .row:first-of-type {
   margin-top: 80px;
 }
 
-
-// Some styling for photos
-// the height in viewports widths
-// helps keeping nice proportions
 .photo {
-  height: 20vw;
+  height: 15vw;
   width: 100%;
 }
 
@@ -33,11 +26,23 @@ li {
 }
 
 .name{
-  margin-block-end: 30px;
+  margin: 0px;
   display: inline-block;
 }
 
 #buybtn{
-  margin-left: 200px;
+  margin: 15px 0px;
+  margin-left: 120px;
+  width: 100px;
   display: inline-block;
+}
+
+#myRow{
+  margin-top: 40px;
+}
+
+#shoppingCart{
+  height: 3.5vw;
+  width: 100%;
+  padding-right: 50px;
 }
