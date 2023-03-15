@@ -3,7 +3,6 @@
 @import 'bootstrap/scss/bootstrap';
 @import 'sticky-footer';
 
-
 main .row:first-of-type {
   margin-top: 80px;
 }
@@ -12,7 +11,7 @@ main .row{
   padding: 0px 80px 40px 80px;
 }
 
-main .col-6{
+main .book{
   background-color:rgba(250, 235, 215, 0.776);
 }
 
@@ -30,6 +29,7 @@ main{
 .photo {
   height: 15vw;
   width: 100%;
+  aspect-ratio: 1/1;
 }
 
 .logo {
@@ -47,10 +47,16 @@ main{
     width: 100%;
     padding-right: 50px;
   }
+
+  /*main .book {
+    margin-right: 5px;
+    width: 18%
+  }*/
 }
-@media only screen and (max-width: 768px) {
+
+@media only screen and (max-width: 992px) {
   #shoppingCart{
-    height: 10vw;
+    height: 8vw;
     width: 100%;
   }
 }

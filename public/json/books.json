@@ -1,0 +1,142 @@
+[
+  {
+    "id": 1,
+    "title": "Laws of UX",
+    "author": "on Yablonski",
+    "catagory": "UX",
+    "price": 367
+  },
+  {
+    "id": 2,
+    "title": "Get Coding! Learn HTML, CSS & Javascript to Build a Website, App & Game",
+    "author": "Young",
+    "catagory": "HTML",
+    "price": 200
+  },
+  {
+    "id": 3,
+    "title": "HTML Flashcards Game",
+    "author": "No one",
+    "catagory": "HTML",
+    "price": 450
+  },
+  {
+    "id": 4,
+    "title": "UX/UI Designer Notebook",
+    "author": "Scripto Love Press",
+    "catagory": "UX",
+    "price": 300
+  },
+  {
+    "id": 5,
+    "title": "Css: The Definitive Guide: Web Layout and Presentation",
+    "author": "Eric Meyer",
+    "catagory": "CSS",
+    "price": 421
+  },
+  {
+    "id": 6,
+    "title": "JavaScript - an introduction",
+    "author": "Farah",
+    "catagory": "JavaScript",
+    "price": 500
+  },
+  {
+    "id": 7,
+    "title": "Responsive design with Bootstrap",
+    "author": "Farah",
+    "catagory": "UX",
+    "price": 500
+  },
+  {
+    "id": 8,
+    "title": "Eloquent Javascript",
+    "author": "Marijn Haverbeke",
+    "catagory": "JavaScript",
+    "price": 443
+  },
+  {
+    "id": 9,
+    "title": "Lean UX: Designing Great Products with Agile Teams",
+    "author": "Jeff Gothelf",
+    "catagory": "UX",
+    "price": 360
+  },
+  {
+    "id": 10,
+    "title": "CSS in Depth",
+    "author": "Keith J Grant",
+    "catagory": "CSS",
+    "price": 399
+  },
+  {
+    "id": 11,
+    "title": "Modern CSS",
+    "author": "Joe Attardi",
+    "catagory": "CSS",
+    "price": 331
+  },
+  {
+    "id": 12,
+    "title": "JavaScript - The Definitive Guide",
+    "author": "David Flanagan",
+    "catagory": "JavaScript",
+    "price": 565
+  },
+  {
+    "id": 13,
+    "title": "CSS - an introduction",
+    "author": "Farah",
+    "catagory": "CSS",
+    "price": 500
+  },
+  {
+    "id": 14,
+    "title": "What UX is Really About",
+    "author": "Celia Hodent",
+    "catagory": "UX",
+    "price": 377
+  },
+  {
+    "id": 15,
+    "title": "HTML and CSS: Design and Build Websites",
+    "author": "Jon Duckett",
+    "catagory": "HTML",
+    "price": 307
+  },
+  {
+    "id": 16,
+    "title": "JavaScript: The Good Parts",
+    "author": "Douglas Crockford",
+    "catagory": "JavaScript",
+    "price": 120
+  },
+  {
+    "id": 17,
+    "title": "HTML5 Pocket Reference",
+    "author": " Jennifer Nieder Robbins",
+    "catagory": "HTML",
+    "price": 231
+  },
+  {
+    "id": 18,
+    "title": "Head First JavaScript Programming",
+    "author": "Elisabeth Robson and Eric Freeman",
+    "catagory": "JavaScript",
+    "price": 269
+  },
+  {
+    "id": 19,
+    "title": "CSS Cookbook",
+    "author": "Christopher Schmitt",
+    "catagory": "CSS",
+    "price": 122
+  },
+  {
+    "id": 20,
+    "title": "HTML - an introduction",
+    "author": "Farah",
+    "catagory": "HTML",
+    "price": 500
+  }
+]

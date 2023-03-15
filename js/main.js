@@ -15,6 +15,7 @@ const $ = el => document.querySelector(el);
 const fetchText = async url => (await (await (fetch(url))).text())
   .replace(/<script.+?vite\/client.+?<\/script>/g, '');
 
+let shoppingCart = [];
 // helper: replace a DOM element with new element(s) from html string
 function replaceElement(element, html, remove = true) {
   let div = document.createElement('div');
@@ -113,6 +114,18 @@ function setActiveLinkInNavbar() {
   oldActive && oldActive.classList.remove('active');
   newActive && newActive.classList.add('active');
 }
+
+/*$('buyBtn1').addEventListener('click', e => {
+
+})
+
+$('cartBtn').addEventListener('click', e => {
+
+})
+
+function getBookInfo(name){
+
+}*/
 
 // initially, on hard load/reload:
 // mount components and load the page
