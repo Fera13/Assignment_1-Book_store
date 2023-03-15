@@ -8,20 +8,23 @@ main .row:first-of-type {
   margin-top: 80px;
 }
 
-main .col-3{
-  background-color:antiquewhite;
+main .row{
+  padding: 0px 80px 40px 80px;
+}
+
+main .col-6{
+  background-color:rgba(250, 235, 215, 0.776);
 }
 
 body{
   background-image: url('/Background2.jpg');
   background-size: cover;
   background-attachment: fixed;
-  /* do not scroll with the page */
 }
+
 
 main{
   background-color: rgba(255, 236, 222, 0.9);
-  
 }
 
 .photo {
@@ -29,7 +32,6 @@ main{
   width: 100%;
 }
 
-// A 'fake' logo
 .logo {
   font-family: 'Carter One';
   display: inline-block;
@@ -53,7 +55,7 @@ main{
   }
 }
 
-.btn{
+.cartBtn{
   padding: 0px;
   border: 0;
 }
@@ -62,14 +64,10 @@ li {
   list-style: none
 }
 
-.name{
-  margin-bottom: 15px;
-  display: inline-block;
-}
-
 #buybtn{
   margin-bottom: 20px;
-  width: 100px;
+  margin-top: 20px;
+  width: 70px;
   display: inline-block;
 }
 
@@ -77,3 +75,7 @@ li {
   margin-top: 20px;
 }
 
+h2 {
+  display: inline-block;
+  margin-bottom: 50px;
+}
