@@ -8,6 +8,22 @@ main .row:first-of-type {
   margin-top: 80px;
 }
 
+main .col-3{
+  background-color:antiquewhite;
+}
+
+body{
+  background-image: url('/Background2.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  /* do not scroll with the page */
+}
+
+main{
+  background-color: rgba(255, 236, 222, 0.9);
+  
+}
+
 .photo {
   height: 15vw;
   width: 100%;
@@ -26,23 +42,22 @@ li {
 }
 
 .name{
-  margin: 0px;
+  margin-bottom: 15px;
   display: inline-block;
 }
 
 #buybtn{
-  margin: 15px 0px;
-  margin-left: 120px;
+  margin-bottom: 20px;
   width: 100px;
   display: inline-block;
 }
 
 #myRow{
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 #shoppingCart{
-  height: 3.5vw;
+  height: 4vw;
   width: 100%;
   padding-right: 50px;
 }
