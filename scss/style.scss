@@ -33,8 +33,29 @@ main{
 .logo {
   font-family: 'Carter One';
   display: inline-block;
-  margin-right: 40px;
   margin-top: -5px;
+}
+
+@media only screen and (min-width: 992px){
+  .logo{
+    margin-right: 40px;
+  }
+  #shoppingCart {
+    height: 4vw;
+    width: 100%;
+    padding-right: 50px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  #shoppingCart{
+    height: 10vw;
+    width: 100%;
+  }
+}
+
+.btn{
+  padding: 0px;
+  border: 0;
 }
 
 li {
@@ -56,8 +77,3 @@ li {
   margin-top: 20px;
 }
 
-#shoppingCart{
-  height: 4vw;
-  width: 100%;
-  padding-right: 50px;
-}

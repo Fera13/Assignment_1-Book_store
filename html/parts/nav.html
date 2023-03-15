@@ -16,11 +16,19 @@
           <a class="nav-link" href="/shop">Buy books</a>
         </li>
       </ul>
-      <div class="rounded float-end">
-        <a href="../parts/shoppingCart">
-          <img id="shoppingCart" src="/shopping-cart.png" alt="shopping cart icon" />
-        </a>
-      </div>
+      <button class="btn rounded float-end" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+        aria-controls="offcanvasRight">
+        <img id="shoppingCart" src="/shopping-cart.png" alt="shopping cart icon" />
+      </button>
     </div>
   </div>
 </nav>
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <p>hello</p>
+  </div>
+</div>
