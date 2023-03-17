@@ -96,6 +96,16 @@ h2 {
   }
 }
 
+.book-amount-input{
+  width: 30px;
+}
+
+.cart-item, .book-price, .book-amount{
+  display: inline-block;
+  padding-right: 50px;
+
+}
+
 
 .cart-total-title{
   margin-left: 250px;

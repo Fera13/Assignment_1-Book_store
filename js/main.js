@@ -4,10 +4,10 @@
 // import the main scss file: the scss will compile to css
 // and hot reload on changes thanks to Vite
 import '../scss/style.scss';
-
 // import bootstrap JS part
 import * as bootstrap from 'bootstrap';
-
+import { addToCart } from './shoppingFunctions.js';
+//const {addToCart} = require('./shoppingFunctions.js')
 // helper: grab a DOM element
 const $ = el => document.querySelector(el);
 
@@ -115,15 +115,13 @@ function setActiveLinkInNavbar() {
   newActive && newActive.classList.add('active');
 }
 
-/*$('buyBtn1').addEventListener('click', e => {
-
+$('body').addEventListener('click', e => {
+  if (e.target.closest('.buybtn')) {
+    addToCart(e)
+  }
 })
 
-$('cartBtn').addEventListener('click', e => {
-
-})
-
-function getBookInfo(name){
+/*function getBookInfo(name){
 
 }*/
 

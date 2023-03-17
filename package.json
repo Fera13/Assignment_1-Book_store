@@ -3,7 +3,8 @@
     "start": "vite",
     "dev": "vite",
     "build": "vite build && node post-build.cjs",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "type": "module"
   },
   "devDependencies": {
     "sass": "^1.58.0",
