@@ -1,11 +1,21 @@
 
 export function addToCart(event) {
-    let btn = event.target.closest('.buybtn');
-    let parent = btn.parentElement.parentElement
-    let bookName = parent.querySelector('.name').innerText
-    let price = parent.querySelector('.price').innerText
-    addItemToCart(bookName, price)
-    updateSubtotalTotal()
+    if (document.readyState == 'loading') {
+        document.addEventListener('DOMContentLoaded', ready)
+    } else {
+        let btn = event.target.closest('.buybtn');
+        let parent = btn.parentElement.parentElement.parentElement
+        let bookName = parent.querySelector('.title').innerText
+        console.log(bookName)
+        let price = parent.querySelector('.price').innerText
+        price = price.replace('$', '')
+        price = price.replace('Price: ', '')
+        console.log(price)
+        let numPrice = parseFloat(price)
+        console.log(numPrice)
+        addItemToCart(bookName, numPrice)
+        updateSubtotalTotal()
+    }
 }
 
 function addItemToCart(title, price) {
@@ -13,16 +23,16 @@ function addItemToCart(title, price) {
     cartRow.classList.add('cart-row')
     let cartItems = document.querySelector('.cart-items')
     let cartItemNames = cartItems.getElementsByClassName('book-name')
-    for (var i = 0; i < cartItemNames.length; i++) {
+    for (let i = 0; i < cartItemNames.length; i++) {
         if (cartItemNames[i].innerText == title) {
             return
         }
     }
-    var cartRowContents = `
+    let cartRowContents = `
         <div class="cart-item cart-column text-wrap text-break " style="width: 140px">
             <span class="book-name">${title}</span>
         </div>
-        <span class="book-price cart-column">${price}</span>
+        <span class="book-price cart-column">${price}$</span>
         <div class="book-amount cart-column">
             <input class="book-amount-input" type="number" value="1">
         </div>
@@ -33,7 +43,7 @@ function addItemToCart(title, price) {
 }
 
 function changeAmount(event) {
-    var input = event.target
+    let input = event.target
     if (isNaN(input.value) || input.value <= 0) {
         input.value = 1
     }
@@ -45,7 +55,7 @@ function updateSubtotalTotal() {
     let cartRows = cartItemContainer.getElementsByClassName('cart-row')
     let total = 0
     let subTotal = 0
-    for (var i = 0; i < cartRows.length; i++) {
+    for (let i = 0; i < cartRows.length; i++) {
         let cartRow = cartRows[i]
         let priceElement = cartRow.querySelector('.book-price')
         let amountElement = cartRow.querySelector('.book-amount-input')

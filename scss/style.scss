@@ -47,11 +47,6 @@ main{
     width: 100%;
     padding-right: 50px;
   }
-
-  /*main .book {
-    margin-right: 5px;
-    width: 18%
-  }*/
 }
 
 @media only screen and (max-width: 992px) {
@@ -71,7 +66,7 @@ li {
 }
 
 #buybtn{
-  margin-bottom: 20px;
+  padding-bottom: 20px;
   margin-top: 20px;
   width: 70px;
   display: inline-block;
@@ -89,7 +84,7 @@ h2 {
 .cart-row{
 
   .cart-header:first-of-type{
-    margin-right: 60px;
+    margin-right: 100px;
   }
   .cart-header{
     margin-right: 30px;
@@ -102,10 +97,13 @@ h2 {
 
 .cart-item, .book-price, .book-amount{
   display: inline-block;
-  padding-right: 50px;
+  padding-right: 30px;
 
 }
 
+.book-col{
+  display: inline-block;
+}
 
 .cart-total-title{
   margin-left: 250px;

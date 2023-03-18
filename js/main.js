@@ -7,6 +7,7 @@ import '../scss/style.scss';
 // import bootstrap JS part
 import * as bootstrap from 'bootstrap';
 import { addToCart } from './shoppingFunctions.js';
+import { start } from './booksFunctions.js';
 //const {addToCart} = require('./shoppingFunctions.js')
 // helper: grab a DOM element
 const $ = el => document.querySelector(el);
@@ -15,7 +16,7 @@ const $ = el => document.querySelector(el);
 const fetchText = async url => (await (await (fetch(url))).text())
   .replace(/<script.+?vite\/client.+?<\/script>/g, '');
 
-let shoppingCart = [];
+
 // helper: replace a DOM element with new element(s) from html string
 function replaceElement(element, html, remove = true) {
   let div = document.createElement('div');
@@ -36,31 +37,6 @@ async function componentMount() {
     let html = await fetchText(src);
     replaceElement(c, html);
   }
-  repeatElements();
-}
-
-// repeat DOM elements if they have the attribute 
-// repeat = "x" set to a positive number
-function repeatElements() {
-  while (true) {
-    let r = $('[repeat]');
-    if (!r) { break; }
-    let count = Math.max(1, +r.getAttribute('repeat'));
-    r.removeAttribute('repeat');
-    for (let i = 0; i < count - 1; i++) {
-      let html = unsplashFix(r.outerHTML);
-      replaceElement(r, html, false);
-    }
-  }
-}
-
-// special fix on repeat of random unsplash image
-// (so that we don't cache and show the same image)
-function unsplashFix(html) {
-  return html.replace(
-    /(https:\/\/source.unsplash.com\/random\/?[^"]*)/g,
-    '$1&' + Math.random()
-  );
 }
 
 // listen to click on all a tags
@@ -68,6 +44,7 @@ $('body').addEventListener('click', e => {
   let aElement = e.target.closest('a');
   if (!aElement) { return; }
   let href = aElement.getAttribute('href');
+  if (!href) { return; }
   // do nothing if external link (starts with http)
   if (href.indexOf('http') === 0) { return; }
   // do nothing if just '#'
@@ -96,6 +73,11 @@ async function loadPage(src = location.pathname) {
   componentMount();
   // set active link in navbar
   setActiveLinkInNavbar();
+
+  if (window.location.pathname === "/shop") {
+    start()
+  }
+  
 }
 
 // set the correct link active in navbar match on
@@ -120,10 +102,6 @@ $('body').addEventListener('click', e => {
     addToCart(e)
   }
 })
-
-/*function getBookInfo(name){
-
-}*/
 
 // initially, on hard load/reload:
 // mount components and load the page
