@@ -7,8 +7,8 @@ main .row:first-of-type {
   margin-top: 80px;
 }
 
-main .row{
-  padding: 0px 80px 40px 80px;
+main .row:last-child{
+  padding: 0px 0px 40px 80px;
 }
 
 main .book{
