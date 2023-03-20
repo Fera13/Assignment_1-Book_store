@@ -27,27 +27,26 @@ function filterBooks() {
   const categoryFilter = document.querySelector('#category-filter').value;
   const priceFilter = document.querySelector('#price-filter').value;
   const authorFilter = document.querySelector('#author-filter').value;
-  
-  let filteredBooks = books.filter(book => {
-    // filter by category
+
+  let filteredCataBooks = books.filter(book => {
     if (categoryFilter !== 'all' && book.catagory !== categoryFilter) {
       return false;
     }
-    // filter by price
+
     if (priceFilter !== 'all') {
       const priceRange = priceFilter.split('-');
       if (book.price < priceRange[0] || book.price > priceRange[1]) {
         return false;
       }
     }
-    // filter by author
+
     if (authorFilter !== 'all' && book.author !== authorFilter) {
       return false;
     }
     // book passes all filters
     return true;
   });
-  displayBooks(filteredBooks);
+  displayBooks(filteredCataBooks);
 }
 
 function displayBooks(booksToShow) {
