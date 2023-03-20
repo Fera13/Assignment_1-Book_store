@@ -5,30 +5,48 @@ export async function start() {
     document.addEventListener('DOMContentLoaded', ready)
   } else {
     books = await (await fetch('/json/books.json')).json();
-    displayAllBooks();
+    filterBooks()
+    displayBooks(books);
+    
+    const categoryFilter = document.querySelector('#category-filter');
+    const priceFilter = document.querySelector('#price-filter');
+    const authorFilter = document.querySelector('#author-filter');
+    
+    categoryFilter.addEventListener('change', filterBooks);
+    priceFilter.addEventListener('change', filterBooks);
+    authorFilter.addEventListener('change', filterBooks);
   }
+}
+function filterBooks() {
+  const categoryFilter = document.querySelector('#category-filter').value;
+  const priceFilter = document.querySelector('#price-filter').value;
+  const authorFilter = document.querySelector('#author-filter').value;
+}
+
+function filterByAuthor(author){
   
 }
 
-function displayAllBooks() {
+function displayBooks(booksToShow) {
+  console.log(booksToShow)
   let shopRowContents = ``;
-  for (let i = 0; i < books.length; i++) {
+  for (let i = 0; i < booksToShow.length; i++) {
     shopRowContents += `
       <div class="book-col col-5 col-sm-4 col-lg-3 col-xxl-2">
         <div class="book align-self-stretch border border-primary p-2 mb-2 rounded-2 border-opacity-15">    
           <img class="object-fit-cover photo mb-4 border rounded-4 border-dark-subtle"
             src="https://source.unsplash.com/random/?books">
           <section class="title text-wrap text-break">
-            <a href="/description">${books[i].title}<a>
+            <a href="/description">${booksToShow[i].title}<a>
           </section>
           <section class="author">
-            <span> Author: ${books[i].author}</span>
+            <span> Author: ${booksToShow[i].author}</span>
           </section>
           <section class="price">
-            <span> Price: ${books[i].price}$</span>
+            <span> Price: ${booksToShow[i].price}$</span>
           </section>
           <section class="catagory">
-            <span> Catagory: ${books[i].catagory}</span>
+            <span> Catagory: ${booksToShow[i].catagory}</span>
             <button class="buybtn rounded float-end border-primary border-opacity-15">Buy</button>
           </section>
         </div>

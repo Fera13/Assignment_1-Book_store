@@ -29,17 +29,19 @@ function addItemToCart(title, price) {
         }
     }
     let cartRowContents = `
-        <div class="cart-item cart-column text-wrap text-break " style="width: 140px">
+        <div class="cart-item cart-column text-wrap text-break" style="width: 140px">
             <span class="book-name">${title}</span>
         </div>
         <span class="book-price cart-column">${price}$</span>
         <div class="book-amount cart-column">
             <input class="book-amount-input" type="number" value="1">
         </div>
-        <span class="book-subTotal cart-column"></span>`
+        <span class="book-subTotal cart-column">${price}$</span>`
     cartRow.innerHTML = cartRowContents
     cartItems.append(cartRow)
+    updateSubtotalTotal()
     cartRow.querySelector('.book-amount-input').addEventListener('change', changeAmount)
+    
 }
 
 function changeAmount(event) {
@@ -59,13 +61,13 @@ function updateSubtotalTotal() {
         let cartRow = cartRows[i]
         let priceElement = cartRow.querySelector('.book-price')
         let amountElement = cartRow.querySelector('.book-amount-input')
+        let subTotalElement = cartRow.querySelector('.book-subTotal')
         let price = parseFloat(priceElement.innerText.replace('$', ''))
         let amount = amountElement.value
-        subTotal = price * amount
-        total = total + (price * amount)
+        let itemSubTotal = price * amount
+        subTotal = subTotal + itemSubTotal
+        subTotalElement.innerText = '$' + itemSubTotal.toFixed(2)
     }
-    total = Math.round(total * 100) / 100
-    subTotal = Math.round(subTotal * 100) / 100
-    document.querySelector('.total').innerText = '$' + total
-    document.querySelector('.book-subTotal').innerText = '$' + subTotal
+    total = Math.round(subTotal * 100) / 100
+    document.querySelector('.total').innerText = '$' + total.toFixed(2)
 }
