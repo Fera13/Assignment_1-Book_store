@@ -1,3 +1,5 @@
+import { fillCatagoryFilters, fillAuthorFilters, fillPriceFilters } from './filters.js';
+
 let books;
 
 export async function start() {
@@ -7,7 +9,10 @@ export async function start() {
     books = await (await fetch('/json/books.json')).json();
     filterBooks()
     displayBooks(books);
-    
+    fillCatagoryFilters(books)
+    fillAuthorFilters(books)
+    fillPriceFilters()
+
     const categoryFilter = document.querySelector('#category-filter');
     const priceFilter = document.querySelector('#price-filter');
     const authorFilter = document.querySelector('#author-filter');
@@ -17,14 +22,32 @@ export async function start() {
     authorFilter.addEventListener('change', filterBooks);
   }
 }
+
 function filterBooks() {
   const categoryFilter = document.querySelector('#category-filter').value;
   const priceFilter = document.querySelector('#price-filter').value;
   const authorFilter = document.querySelector('#author-filter').value;
-}
-
-function filterByAuthor(author){
   
+  let filteredBooks = books.filter(book => {
+    // filter by category
+    if (categoryFilter !== 'all' && book.catagory !== categoryFilter) {
+      return false;
+    }
+    // filter by price
+    if (priceFilter !== 'all') {
+      const priceRange = priceFilter.split('-');
+      if (book.price < priceRange[0] || book.price > priceRange[1]) {
+        return false;
+      }
+    }
+    // filter by author
+    if (authorFilter !== 'all' && book.author !== authorFilter) {
+      return false;
+    }
+    // book passes all filters
+    return true;
+  });
+  displayBooks(filteredBooks);
 }
 
 function displayBooks(booksToShow) {
