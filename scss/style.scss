@@ -7,13 +7,13 @@ main .row:first-of-type {
   margin-top: 80px;
 }
 
-main .row:last-child{
-  padding: 0px 0px 40px 80px;
-}
+
 
 main .book{
   background-color:rgba(250, 235, 215, 0.776);
+  height: 26em;
 }
+
 
 body{
   background-image: url('/Background2.jpg');
@@ -58,7 +58,7 @@ main{
 
 .cartBtn{
   padding: 0px;
-  border: 0;
+  border: 0px;
 }
 
 li {

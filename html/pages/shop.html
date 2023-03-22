@@ -4,20 +4,28 @@
       <h2>Current available books</h2>
     </div>
     <div class="col position-relative">
-      Filter by
-      <component src="/parts/filters"></component>
-      Sort by
-      <component src="/parts/sort"></component>
-        </div>
+      <div class="filters">
+        <label class="fw-semibold" for="category-filter">
+          <p>Filter by</p>
+          Category:
+        </label>
+        <select id="category-filter"></select>
+
+        <label class="fw-semibold" for="price-filter">Price:</label>
+        <select id="price-filter"></select>
+
+        <label class="fw-semibold" for="author-filter">Author:</label>
+        <select id="author-filter"></select>
+      </div>
+
+      <div class="sorters">
+        <label class="fw-semibold" for="all-sorts">Sort by:</label>
+        <select id="all-sorts"></select>
       </div>
     </div>
   </div>
 </div>
 
-<div class="shop-items">
-  <div class="shop-row"></div>
+<div id="shop-items" class="container container-fluid">
+  <div id="shop-row" class="row justify-content-center"></div>
 </div>
-
-
-
-
