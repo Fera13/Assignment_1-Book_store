@@ -165,12 +165,30 @@ export function titleClicked(event) {
   const descriptionPut = document.querySelector("#description");
   const imagePut = document.querySelector(".dec-image");
 
-  const decContents = `<h4 class="fw-bold text-wrap" id="title">${title}</h4>${author}<br>${catagory}<br>${price}`;
+  //const decContents = `<h4 class="fw-bold text-wrap" id="title">${title}</h4>${author}<br>${catagory}<br>${price}`;
+  const fill = `
+                  <div class="align-self-stretch border border-primary p-2 mb-2 rounded-2 border-opacity-15">
+                    <section>
+                      <button class="buybtn justify-content-center rounded border-primary border-opacity-15">Buy</button>
+                    <section>
+                    <section class="title fw-semibold">
+                      ${title}
+                    </section>
+                    <section class="author">
+                      <span> ${author}</span>
+                    </section>
+                    <section class="catagory">
+                      <span> ${catagory}</span>
+                    </section>
+                    <section class="price">
+                      <span> ${price}$</span>
+                    </section>
+                  </div>`;
   const descriptionContents = `<h3>Description</h3> ${description} `;
   let image = `https://source.unsplash.com/random/?book&${randomNumber}`;
 
   descriptionPut.innerHTML = descriptionContents;
-  infoPut.innerHTML = decContents;
+  infoPut.innerHTML = fill;
   imagePut.setAttribute("src", image);
 }
 

@@ -3,13 +3,21 @@
 @import 'bootstrap/scss/bootstrap';
 @import 'sticky-footer';
 
-main .row:first-of-type, #description {
+main .row:first-of-type{
   margin-top: 80px;
 }
 
 main .book{
   background-color:rgba(250, 235, 215, 0.776);
   height: 26em;
+}
+
+#book-info, #description, .text-col{
+  background-color: rgba(250, 235, 215, 0.776);
+}
+
+#description, .text-col{
+  padding: 20px;
 }
 
 .tilte{
@@ -28,7 +36,7 @@ main{
   background-color: rgba(255, 236, 222, 0.9);
 }
 
-.photo {
+.photo, .dec-image {
   width: 100%;
   aspect-ratio: 1/1;
 }
@@ -40,9 +48,11 @@ main{
 }
 
 @media only screen and (min-width: 992px){
+
   .logo{
     margin-right: 40px;
   }
+
   #shoppingCart {
     height: 4vw;
     width: 100%;
@@ -68,7 +78,7 @@ li {
 
 .buybtn{
   margin-top: 10px;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   width: 80px;
 }
 
