@@ -14,13 +14,6 @@ export async function start() {
   fillSorts();
 
   filterAndSortBooks();
-
-  /*document.addEventListener('DOMContainerLoaded', filterAndSortBooks);
-  document.addEventListener('DOMContainerLoaded', fillCatagoryFilters);
-  document.addEventListener('DOMContainerLoaded', fillAuthorFilters);
-  document.addEventListener('DOMContainerLoaded', fillPriceFilters);
-  
-  document.addEventListener('DOMContainerLoaded', fillSorts);*/
 }
 
 function filterAndSortBooks() {
@@ -70,14 +63,19 @@ function filterAndSortBooks() {
 function displayBooks(booksToShow) {
   const shopRow = document.querySelector("#shop-row");
   let shopRowContents = ``;
+  let randNum = 1;
   for (let i = 0; i < booksToShow.length; i++) {
+    const randomNumber = Math.random();
     shopRowContents += `
-      <div class="book-col col-5 col-sm-4 col-lg-3 col-xxl-3">
+      <div class="book-col col-6 col-sm-4 col-lg-3 col-xxl-2">
         <div class="book align-self-stretch border border-primary p-2 mb-2 rounded-2 border-opacity-15">    
-          <img class="object-fit-cover photo mb-4 border rounded-4 border-dark-subtle"
-            src="https://source.unsplash.com/random/?books">
-          <section class="title text-wrap text-break">
-            <a class="overflow-hide fw-semibold" href="/description">${booksToShow[i].title}</a>
+          <img class="image object-fit-cover photo mb-4 border rounded-4 border-dark-subtle"
+            src="https://source.unsplash.com/random/?book&${randNum}">
+          <section>
+            <button class="buybtn justify-content-center rounded border-primary border-opacity-15">Buy</button>
+          <section>
+          <section class="title">
+            <a class="bookTitle fw-semibold" href="/description">${booksToShow[i].title}</a>
           </section>
           <section class="author">
             <span> Author: ${booksToShow[i].author}</span>
@@ -87,10 +85,10 @@ function displayBooks(booksToShow) {
           </section>
           <section class="catagory">
             <span> Catagory: ${booksToShow[i].catagory}</span>
-            <button class="buybtn rounded float-end border-primary border-opacity-15">Buy</button>
           </section>
         </div>
       </div>`;
+    randNum += 1;
   }
   shopRow.innerHTML = shopRowContents;
 }
@@ -149,4 +147,36 @@ export function fillSorts() {
   const allSort = document.querySelector("#all-sorts");
   allSort.innerHTML = insideSort;
   allSort.addEventListener("change", filterAndSortBooks);
+}
+
+export function titleClicked(event) {
+  event.preventDefault();
+  const button = event.target;
+  const randomNumber = Math.random();
+
+  const bookSelected = button.parentElement.parentElement.parentElement;
+  const title = bookSelected.querySelector(".bookTitle").innerText;
+  const price = bookSelected.querySelector(".price").innerText;
+  const author = bookSelected.querySelector(".author").innerText;
+  const catagory = bookSelected.querySelector(".catagory").innerText;
+  const description = getDescription(title);
+
+  const infoPut = document.querySelector("#book-info");
+  const descriptionPut = document.querySelector("#description");
+  const imagePut = document.querySelector(".dec-image");
+
+  const decContents = `<h4 class="fw-bold text-wrap" id="title">${title}</h4>${author}<br>${catagory}<br>${price}`;
+  const descriptionContents = `<h3>Description</h3> ${description} `;
+  let image = `https://source.unsplash.com/random/?book&${randomNumber}`;
+
+  descriptionPut.innerHTML = descriptionContents;
+  infoPut.innerHTML = decContents;
+  imagePut.setAttribute("src", image);
+}
+
+function getDescription(titleToFind) {
+  const foundBook = books
+    .filter((book) => book.title === titleToFind)
+    .find((book) => book);
+  return foundBook.description;
 }

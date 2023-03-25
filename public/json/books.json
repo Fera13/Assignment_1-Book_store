@@ -3,7 +3,7 @@
     "id": 1,
     "title": "Laws of UX",
     "author": "on Yablonski",
-    "description": "Lorem ipsum / or your text",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor urna at tortor rutrum, sed ornare neque eleifend. Praesent id massa pharetra, venenatis nulla eu, fringilla lectus. Nulla facilisi. Integer gravida felis eget urna posuere dictum. Suspendisse ullamcorper purus at nisi lacinia, sit amet malesuada turpis fermentum. Etiam volutpat venenatis enim, eu semper ipsum maximus quis. Nam at mauris eu odio malesuada commodo. Proin non faucibus felis. Aenean sodales, lacus a congue vestibulum, sem lorem euismod leo, in gravida metus ipsum id quam. Nulla ut velit velit. Vivamus vulputate ante at sapien euismod, sed ullamcorper urna blandit.",
     "catagory": "UX",
     "price": 367
   },
@@ -11,7 +11,7 @@
     "id": 2,
     "title": "Get Coding! Learn HTML",
     "author": "Young",
-    "description": "Lorem ipsum / or your text",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor urna at tortor rutrum, sed ornare neque eleifend. Praesent id massa pharetra, venenatis nulla eu, fringilla lectus. Nulla facilisi. Integer gravida felis eget urna posuere dictum. Suspendisse ullamcorper purus at nisi lacinia, sit amet malesuada turpis fermentum. Etiam volutpat venenatis enim, eu semper ipsum maximus quis. Nam at mauris eu odio malesuada commodo. Proin non faucibus felis. Aenean sodales, lacus a congue vestibulum, sem lorem euismod leo, in gravida metus ipsum id quam. Nulla ut velit velit. Vivamus vulputate ante at sapien euismod, sed ullamcorper urna blandit.",
     "catagory": "HTML",
     "price": 200
   },
@@ -19,7 +19,7 @@
     "id": 3,
     "title": "HTML Flashcards Game",
     "author": "No one",
-    "description": "Lorem ipsum / or your text",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor urna at tortor rutrum, sed ornare neque eleifend. Praesent id massa pharetra, venenatis nulla eu, fringilla lectus. Nulla facilisi. Integer gravida felis eget urna posuere dictum. Suspendisse ullamcorper purus at nisi lacinia, sit amet malesuada turpis fermentum. Etiam volutpat venenatis enim, eu semper ipsum maximus quis. Nam at mauris eu odio malesuada commodo. Proin non faucibus felis. Aenean sodales, lacus a congue vestibulum, sem lorem euismod leo, in gravida metus ipsum id quam. Nulla ut velit velit. Vivamus vulputate ante at sapien euismod, sed ullamcorper urna blandit.",
     "catagory": "HTML",
     "price": 450
   },
@@ -27,7 +27,7 @@
     "id": 4,
     "title": "UX/UI Designer Notebook",
     "author": "Scripto Love Press",
-    "description": "Lorem ipsum / or your text",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor urna at tortor rutrum, sed ornare neque eleifend. Praesent id massa pharetra, venenatis nulla eu, fringilla lectus. Nulla facilisi. Integer gravida felis eget urna posuere dictum. Suspendisse ullamcorper purus at nisi lacinia, sit amet malesuada turpis fermentum. Etiam volutpat venenatis enim, eu semper ipsum maximus quis. Nam at mauris eu odio malesuada commodo. Proin non faucibus felis. Aenean sodales, lacus a congue vestibulum, sem lorem euismod leo, in gravida metus ipsum id quam. Nulla ut velit velit. Vivamus vulputate ante at sapien euismod, sed ullamcorper urna blandit.",
     "catagory": "UX",
     "price": 300
   },
@@ -35,7 +35,7 @@
     "id": 5,
     "title": "Css: The Guide",
     "author": "Eric Meyer",
-    "description": "Lorem ipsum / or your text",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor urna at tortor rutrum, sed ornare neque eleifend. Praesent id massa pharetra, venenatis nulla eu, fringilla lectus. Nulla facilisi. Integer gravida felis eget urna posuere dictum. Suspendisse ullamcorper purus at nisi lacinia, sit amet malesuada turpis fermentum. Etiam volutpat venenatis enim, eu semper ipsum maximus quis. Nam at mauris eu odio malesuada commodo. Proin non faucibus felis. Aenean sodales, lacus a congue vestibulum, sem lorem euismod leo, in gravida metus ipsum id quam. Nulla ut velit velit. Vivamus vulputate ante at sapien euismod, sed ullamcorper urna blandit.",
     "catagory": "CSS",
     "price": 421
   },
@@ -59,7 +59,7 @@
     "id": 8,
     "title": "Eloquent Javascript",
     "author": "Marijn Haverbeke",
-    "description": "Lorem ipsum / or your text",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor urna at tortor rutrum, sed ornare neque eleifend. Praesent id massa pharetra, venenatis nulla eu, fringilla lectus. Nulla facilisi. Integer gravida felis eget urna posuere dictum. Suspendisse ullamcorper purus at nisi lacinia, sit amet malesuada turpis fermentum. Etiam volutpat venenatis enim, eu semper ipsum maximus quis. Nam at mauris eu odio malesuada commodo. Proin non faucibus felis. Aenean sodales, lacus a congue vestibulum, sem lorem euismod leo, in gravida metus ipsum id quam. Nulla ut velit velit. Vivamus vulputate ante at sapien euismod, sed ullamcorper urna blandit.",
     "catagory": "JavaScript",
     "price": 443
   },
@@ -67,7 +67,7 @@
     "id": 9,
     "title": "Learn UX: Designing",
     "author": "Jeff Gothelf",
-    "description": "Lorem ipsum / or your text",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor urna at tortor rutrum, sed ornare neque eleifend. Praesent id massa pharetra, venenatis nulla eu, fringilla lectus. Nulla facilisi. Integer gravida felis eget urna posuere dictum. Suspendisse ullamcorper purus at nisi lacinia, sit amet malesuada turpis fermentum. Etiam volutpat venenatis enim, eu semper ipsum maximus quis. Nam at mauris eu odio malesuada commodo. Proin non faucibus felis. Aenean sodales, lacus a congue vestibulum, sem lorem euismod leo, in gravida metus ipsum id quam. Nulla ut velit velit. Vivamus vulputate ante at sapien euismod, sed ullamcorper urna blandit.",
     "catagory": "UX",
     "price": 360
   },
@@ -75,7 +75,7 @@
     "id": 10,
     "title": "CSS in Depth",
     "author": "Keith J Grant",
-    "description": "Lorem ipsum / or your text",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor urna at tortor rutrum, sed ornare neque eleifend. Praesent id massa pharetra, venenatis nulla eu, fringilla lectus. Nulla facilisi. Integer gravida felis eget urna posuere dictum. Suspendisse ullamcorper purus at nisi lacinia, sit amet malesuada turpis fermentum. Etiam volutpat venenatis enim, eu semper ipsum maximus quis. Nam at mauris eu odio malesuada commodo. Proin non faucibus felis. Aenean sodales, lacus a congue vestibulum, sem lorem euismod leo, in gravida metus ipsum id quam. Nulla ut velit velit. Vivamus vulputate ante at sapien euismod, sed ullamcorper urna blandit.",
     "catagory": "CSS",
     "price": 399
   },
@@ -83,7 +83,7 @@
     "id": 11,
     "title": "Modern CSS",
     "author": "Joe Attardi",
-    "description": "Lorem ipsum / or your text",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor urna at tortor rutrum, sed ornare neque eleifend. Praesent id massa pharetra, venenatis nulla eu, fringilla lectus. Nulla facilisi. Integer gravida felis eget urna posuere dictum. Suspendisse ullamcorper purus at nisi lacinia, sit amet malesuada turpis fermentum. Etiam volutpat venenatis enim, eu semper ipsum maximus quis. Nam at mauris eu odio malesuada commodo. Proin non faucibus felis. Aenean sodales, lacus a congue vestibulum, sem lorem euismod leo, in gravida metus ipsum id quam. Nulla ut velit velit. Vivamus vulputate ante at sapien euismod, sed ullamcorper urna blandit.",
     "catagory": "CSS",
     "price": 331
   },
@@ -91,7 +91,7 @@
     "id": 12,
     "title": "JavaScript - The Guide",
     "author": "David Flanagan",
-    "description": "Lorem ipsum / or your text",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor urna at tortor rutrum, sed ornare neque eleifend. Praesent id massa pharetra, venenatis nulla eu, fringilla lectus. Nulla facilisi. Integer gravida felis eget urna posuere dictum. Suspendisse ullamcorper purus at nisi lacinia, sit amet malesuada turpis fermentum. Etiam volutpat venenatis enim, eu semper ipsum maximus quis. Nam at mauris eu odio malesuada commodo. Proin non faucibus felis. Aenean sodales, lacus a congue vestibulum, sem lorem euismod leo, in gravida metus ipsum id quam. Nulla ut velit velit. Vivamus vulputate ante at sapien euismod, sed ullamcorper urna blandit.",
     "catagory": "JavaScript",
     "price": 565
   },
@@ -107,7 +107,7 @@
     "id": 14,
     "title": "What UX is Really About",
     "author": "Celia Hodent",
-    "description": "Lorem ipsum / or your text",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor urna at tortor rutrum, sed ornare neque eleifend. Praesent id massa pharetra, venenatis nulla eu, fringilla lectus. Nulla facilisi. Integer gravida felis eget urna posuere dictum. Suspendisse ullamcorper purus at nisi lacinia, sit amet malesuada turpis fermentum. Etiam volutpat venenatis enim, eu semper ipsum maximus quis. Nam at mauris eu odio malesuada commodo. Proin non faucibus felis. Aenean sodales, lacus a congue vestibulum, sem lorem euismod leo, in gravida metus ipsum id quam. Nulla ut velit velit. Vivamus vulputate ante at sapien euismod, sed ullamcorper urna blandit.",
     "catagory": "UX",
     "price": 377
   },
@@ -115,7 +115,7 @@
     "id": 15,
     "title": "HTML: Design Websites",
     "author": "Jon Duckett",
-    "description": "Lorem ipsum / or your text",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor urna at tortor rutrum, sed ornare neque eleifend. Praesent id massa pharetra, venenatis nulla eu, fringilla lectus. Nulla facilisi. Integer gravida felis eget urna posuere dictum. Suspendisse ullamcorper purus at nisi lacinia, sit amet malesuada turpis fermentum. Etiam volutpat venenatis enim, eu semper ipsum maximus quis. Nam at mauris eu odio malesuada commodo. Proin non faucibus felis. Aenean sodales, lacus a congue vestibulum, sem lorem euismod leo, in gravida metus ipsum id quam. Nulla ut velit velit. Vivamus vulputate ante at sapien euismod, sed ullamcorper urna blandit.",
     "catagory": "HTML",
     "price": 307
   },
@@ -123,7 +123,7 @@
     "id": 16,
     "title": "JavaScript: The Good Parts",
     "author": "Douglas Crockford",
-    "description": "Lorem ipsum / or your text",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor urna at tortor rutrum, sed ornare neque eleifend. Praesent id massa pharetra, venenatis nulla eu, fringilla lectus. Nulla facilisi. Integer gravida felis eget urna posuere dictum. Suspendisse ullamcorper purus at nisi lacinia, sit amet malesuada turpis fermentum. Etiam volutpat venenatis enim, eu semper ipsum maximus quis. Nam at mauris eu odio malesuada commodo. Proin non faucibus felis. Aenean sodales, lacus a congue vestibulum, sem lorem euismod leo, in gravida metus ipsum id quam. Nulla ut velit velit. Vivamus vulputate ante at sapien euismod, sed ullamcorper urna blandit.",
     "catagory": "JavaScript",
     "price": 120
   },
@@ -131,7 +131,7 @@
     "id": 17,
     "title": "HTML5 Pocket Reference",
     "author": " Jennifer Robbins",
-    "description": "Lorem ipsum / or your text",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor urna at tortor rutrum, sed ornare neque eleifend. Praesent id massa pharetra, venenatis nulla eu, fringilla lectus. Nulla facilisi. Integer gravida felis eget urna posuere dictum. Suspendisse ullamcorper purus at nisi lacinia, sit amet malesuada turpis fermentum. Etiam volutpat venenatis enim, eu semper ipsum maximus quis. Nam at mauris eu odio malesuada commodo. Proin non faucibus felis. Aenean sodales, lacus a congue vestibulum, sem lorem euismod leo, in gravida metus ipsum id quam. Nulla ut velit velit. Vivamus vulputate ante at sapien euismod, sed ullamcorper urna blandit.",
     "catagory": "HTML",
     "price": 231
   },
@@ -139,7 +139,7 @@
     "id": 18,
     "title": "JavaScript Programming",
     "author": "Elisabeth Robson",
-    "description": "Lorem ipsum / or your text",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor urna at tortor rutrum, sed ornare neque eleifend. Praesent id massa pharetra, venenatis nulla eu, fringilla lectus. Nulla facilisi. Integer gravida felis eget urna posuere dictum. Suspendisse ullamcorper purus at nisi lacinia, sit amet malesuada turpis fermentum. Etiam volutpat venenatis enim, eu semper ipsum maximus quis. Nam at mauris eu odio malesuada commodo. Proin non faucibus felis. Aenean sodales, lacus a congue vestibulum, sem lorem euismod leo, in gravida metus ipsum id quam. Nulla ut velit velit. Vivamus vulputate ante at sapien euismod, sed ullamcorper urna blandit.",
     "catagory": "JavaScript",
     "price": 269
   },
@@ -147,7 +147,7 @@
     "id": 19,
     "title": "CSS Cookbook",
     "author": "Christopher Schmitt",
-    "description": "Lorem ipsum / or your text",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor urna at tortor rutrum, sed ornare neque eleifend. Praesent id massa pharetra, venenatis nulla eu, fringilla lectus. Nulla facilisi. Integer gravida felis eget urna posuere dictum. Suspendisse ullamcorper purus at nisi lacinia, sit amet malesuada turpis fermentum. Etiam volutpat venenatis enim, eu semper ipsum maximus quis. Nam at mauris eu odio malesuada commodo. Proin non faucibus felis. Aenean sodales, lacus a congue vestibulum, sem lorem euismod leo, in gravida metus ipsum id quam. Nulla ut velit velit. Vivamus vulputate ante at sapien euismod, sed ullamcorper urna blandit.",
     "catagory": "CSS",
     "price": 122
   },

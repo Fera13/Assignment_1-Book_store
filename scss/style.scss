@@ -3,17 +3,19 @@
 @import 'bootstrap/scss/bootstrap';
 @import 'sticky-footer';
 
-main .row:first-of-type {
+main .row:first-of-type, #description {
   margin-top: 80px;
 }
-
-
 
 main .book{
   background-color:rgba(250, 235, 215, 0.776);
   height: 26em;
 }
 
+.tilte{
+  overflow: hidden;
+  height: 8em;
+}
 
 body{
   background-image: url('/Background2.jpg');
@@ -27,7 +29,6 @@ main{
 }
 
 .photo {
-  height: 15vw;
   width: 100%;
   aspect-ratio: 1/1;
 }
@@ -65,20 +66,23 @@ li {
   list-style: none
 }
 
-#buybtn{
-  padding-bottom: 20px;
-  margin-top: 20px;
-  width: 70px;
-  display: inline-block;
+.buybtn{
+  margin-top: 10px;
+  margin-bottom: 30px;
+  width: 80px;
 }
 
 #myRow{
   margin-top: 20px;
 }
 
+#description{
+  margin-left: 20px;
+}
+
 h2 {
   display: inline-block;
-  margin-bottom: 50px;
+  margin-left: 40px;
 }
 
 .cart-row{
@@ -107,4 +111,8 @@ h2 {
 
 .cart-total-title{
   margin-left: 230px;
+}
+
+.cart-items{
+  margin-bottom: 25px;
 }
