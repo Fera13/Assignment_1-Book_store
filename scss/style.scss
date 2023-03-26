@@ -65,6 +65,14 @@ main{
     height: 8vw;
     width: 100%;
   }
+  
+}
+
+@media only screen and (max-width: 765px) {
+  .description-row {
+      width: 100%;
+      display: block;
+    }
 }
 
 .cartBtn{

@@ -167,7 +167,7 @@ export function titleClicked(event) {
 
   //const decContents = `<h4 class="fw-bold text-wrap" id="title">${title}</h4>${author}<br>${catagory}<br>${price}`;
   const fill = `
-                  <div class="align-self-stretch border border-primary p-2 mb-2 rounded-2 border-opacity-15">
+                  <div class="des-box align-self-stretch border border-primary p-2 mb-2 rounded-2 border-opacity-15">
                     <section>
                       <button class="buybtn justify-content-center rounded border-primary border-opacity-15">Buy</button>
                     <section>
@@ -181,7 +181,7 @@ export function titleClicked(event) {
                       <span> ${catagory}</span>
                     </section>
                     <section class="price">
-                      <span> ${price}$</span>
+                      <span> ${price}</span>
                     </section>
                   </div>`;
   const descriptionContents = `<h3>Description</h3> ${description} `;
