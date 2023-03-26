@@ -43,7 +43,7 @@
     "id": 6,
     "title": "JavaScript - an introduction",
     "author": "Farah",
-    "description": "Lorem ipsum / or your text",
+    "description": "This book gives an introduction to JavaScript. JavaScript is a famous programming language that is known for being interactive and dynamic. It can be used in both Frontend development and Backend development functioning on both the client-side and server-side of web development. It acts as a bridge that can fetch the information needed from stored files such as a database or a JSON file and delivers it to the right part in the HTML code. It also acts like the manager that listens to events happening on the page using the EventListener. Those events include when a user clicks a button, reloads a page or changes the selection on a dropdown menu then responds to the user’s input in real-time with an appropriate action. Using JavaScript allows for the creation of an interactive and enhanced user experience. Another use of JavaScript in frontend development is form validation. JavaScript can be used to validate user input in real-time, providing immediate feedback to users if they have entered an invalid input. JavaScript interacts with the body of HTML by using the keyword “document”. Using that it can select any query by the id or class then it can manipulate the selected query such as getting the value and setting a new value inside the HTML element.",
     "catagory": "JavaScript",
     "price": 500
   },
