@@ -75,7 +75,7 @@ function displayBooks(booksToShow) {
             <button class="buybtn justify-content-center rounded border-primary border-opacity-15">Buy</button>
           <section>
           <section class="title">
-            <a class="bookTitle fw-semibold" href="/description">${booksToShow[i].title}</a>
+            <a class="bookTitle fw-semibold" data-bs-toggle="modal" data-bs-target="#exampleModal">${booksToShow[i].title}</a>
           </section>
           <section class="author">
             <span> Author: ${booksToShow[i].author}</span>

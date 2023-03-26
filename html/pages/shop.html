@@ -28,3 +28,44 @@
 <div id="shop-items" class="container container-fluid">
   <div id="shop-row" class="row justify-content-center"></div>
 </div>
+
+<!-- Modal -->
+<div
+  class="modal fade"
+  id="exampleModal"
+  tabindex="-1"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+>
+  <div
+    class="modal-dialog custom-modal d-flex align-items-center justify-content-center"
+  >
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">
+          Book Description
+        </h1>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="container">
+        <div class="row description-row">
+          <div class="col col-md-3 col-sm-12">
+            <img
+              class="dec-image object-fit-cover photo mb-4 border rounded-4 border-dark-subtle"
+              src=""
+            />
+            <section id="book-info"></section>
+          </div>
+          <div class="col col-md-9 col-sm-12">
+            <p class="rounded" id="description"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

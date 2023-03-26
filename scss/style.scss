@@ -75,6 +75,12 @@ main{
     }
 }
 
+.description-row{
+  margin-left: 12px;
+  margin-right: 12px;
+  margin-bottom: 40px;
+}
+
 .cartBtn{
   padding: 0px;
   border: 0px;
@@ -92,10 +98,6 @@ li {
 
 #myRow{
   margin-top: 20px;
-}
-
-#description{
-  margin-left: 20px;
 }
 
 h2 {
@@ -133,4 +135,9 @@ h2 {
 
 .cart-items{
   margin-bottom: 25px;
+}
+
+.custom-modal {
+  max-width: 1200px;
+  height: 650px;
 }
