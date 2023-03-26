@@ -1,5 +1,3 @@
-//import { fillCatagoryFilters, fillAuthorFilters, fillPriceFilters } from './filters.js';
-//import { fillPriceSort, fillAuthorSort, fillTitleSort } from './sorters.js';
 let books;
 
 export async function start() {
@@ -47,7 +45,6 @@ function filterAndSortBooks() {
   } else if (allSort === "titleDescending") {
     sortedBooks.sort((a, b) => (a.title < b.title ? 1 : -1));
   } else if (allSort === "priceAscending") {
-    console.log(sortedBooks);
     sortedBooks.sort((a, b) => a.price - b.price);
   } else if (allSort === "priceDescending") {
     sortedBooks.sort((a, b) => b.price - a.price);
@@ -165,7 +162,6 @@ export function titleClicked(event) {
   const descriptionPut = document.querySelector("#description");
   const imagePut = document.querySelector(".dec-image");
 
-  //const decContents = `<h4 class="fw-bold text-wrap" id="title">${title}</h4>${author}<br>${catagory}<br>${price}`;
   const fill = `
                   <div class="des-box align-self-stretch border border-primary p-2 mb-2 rounded-2 border-opacity-15">
                     <section>
